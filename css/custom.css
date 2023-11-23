@@ -1,0 +1,590 @@
+@media only  screen and (max-width: 767px){
+    .zmm-inner{
+
+        /* z-index: 999999999999999999999999999999999999999 !important; */
+    }
+
+    .feature-section{
+        z-index: 1;
+    }
+}
+
+
+
+/* general  */
+.text-justify{
+    text-align: justify;
+
+}
+.unique{
+    font-size: 13pt;
+    line-height: 107%;
+    font-family: 'Cambria', serif;
+    mso-fareast-font-family: Cambria;
+    mso-bidi-font-family: Cambria;
+    mso-ansi-language: EN-US; 
+}
+
+/* TOP BAR TOP BAR  */
+.topbar li .header-address{
+    color: #fff !important;
+    font-weight: 400;
+}
+
+.topbar li span{
+    color: #fff !important;
+    font-weight: 400;
+}
+
+.topbar-right{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px !important;
+}
+.topbar-right a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+}
+
+.topbar .donate-btn{
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 17px;
+    padding: 11px 23px !important;
+    border-radius: 4px;
+    color: #fff !important;
+    text-transform: uppercase;
+    position: relative;
+    background: #bf0a30;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    transition: 0.6s;
+}
+.topbar .donate-btn:hover{
+    background: #192F59;
+    border: 1px solid #000;
+    color: #fff !important;
+}
+
+.togglebar-donate-btn .donate-btn{
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 17px;
+    padding: 11px 23px !important;
+    border-radius: 4px;
+    color: #fff !important;
+    text-transform: uppercase;
+    position: relative;
+    background: #bf0a30;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    transition: 0.6s;
+}
+.togglebar-donate-btn .donate-btn:hover{
+    background: #192F59;
+    border: 1px solid #000;
+    color: #fff !important;
+}
+
+.mobile-donate-btn .donate-btn{
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    line-height: 17px;
+    padding: 5px 12px !important;
+    border-radius: 2px;
+    color: #fff !important;
+    text-transform: uppercase;
+    position: relative;
+    background: #bf0a30;
+    margin-left: 0px;
+    border: 1px solid transparent;
+    transition: 0.6s;
+}
+.mobile-donate-btn .donate-btn:hover{
+    background: #192F59;
+    border: 1px solid #000;
+    color: #fff !important;
+}
+
+
+
+
+/* background slide overlay  */
+.slider-overlay::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.44)50%, rgba(0,0,0,0.44)50%);
+}
+
+
+
+
+/* MISSION AND VISION  */
+.MVM {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-gap: 30px; 
+    align-items: stretch; 
+    justify-content: center; 
+}
+
+.MVM .mv-h{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+
+
+/* about us about us  */
+.about-img{
+    height: 440px;
+}
+.about-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.section-about .dots{
+    position: absolute;
+    left: 120px;
+    top: -20px;
+}
+
+.section-about .dots img{
+    width: 100px;
+}
+
+.section-about .dots img {
+    animation: Move 2.5s infinite;
+}
+@-webkit-keyframes Move {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+@keyframes Move {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+
+
+/* blog news  */
+.blog-inner img{
+    height: 280px !important;
+    object-fit: cover;
+}
+
+.blog-inner h4{
+    font-size: 13px ;
+    line-height: 17px !important;
+}
+
+
+
+/* Home page media query  */
+@media only screen and (max-width: 767px){
+
+    .feature-section{
+        z-index: 9999999;
+        margin-top: -50px;
+    }
+    /* MVM  */
+    .MVM {
+       
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+       
+    }
+    
+    .MVM .mv-h{
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+}
+
+
+
+
+/* History #############################################################################################################################################3 */
+
+.page-banner{
+    padding-top: 150px;
+}
+
+.about-bishop {
+    height: 540px;
+    width: 450px;
+  
+    float: left;
+    shape-outside: url(images/about-us/Bishop-Ezeokafor.jpg);
+    shape-margin: 30px;
+    margin-right: 30px;
+  }
+
+  .about-bishop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.history .animate{
+    width: 700px;
+    height: 3px;
+    background-color: #192F59;
+    position: absolute;
+    left: 580px;
+    top: 150px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.history .animate img{
+    position: absolute;
+    left: 0;
+    top: -9px;
+    animation: History 5s infinite;
+}
+
+
+.history .animate img {
+    animation: Hmove 35s infinite;
+}
+/* @-webkit-keyframes Hmove {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+} */
+@keyframes Hmove {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(650px, 0px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .page-banner{
+        padding-top: 0px;
+    }
+
+    .about-bishop {
+        height: 400px;
+        width: 100%;
+      }
+      
+    .history-abt{
+        padding-top: 0px !important;
+    }
+
+    
+.history .animate{
+    width: 100%;
+    background-color: #192F59;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.history .animate img{
+    position: absolute;
+    left: 0;
+    top: -9px;
+    animation: Hmove 40s infinite;
+}
+
+@keyframes Hmove {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(300px, 0px);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+}
+
+
+/* BOOK APPOINTMENT BOOK APPOINTMENT BOOK APPOINTMENT #########################################################################################3 */
+.book-appointment label{
+    color: #192F59;
+    font-weight: 800;
+}
+.book-appointment h4{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #bf0a30;
+}
+
+
+
+
+
+
+/* PAST BISHOP  PAST BISHOP  PAST BISHOP  PAST BISHOP */
+.past-bishop img{
+    height: 450px;
+    object-fit: cover;
+}
+
+
+
+/* PASTORAL LETTER PASTORAL LETTER PASTORAL LETTER PASTORAL LETTER  */
+.pastoral-letter img{
+    width: 100%;
+    height: 520px !important;
+    object-fit: cover;
+}
+
+
+
+/* PREIEST ON MISSION  */
+.priest-on-missions ul{
+   
+    padding: 0px 0px 0px 20px;
+    padding-left: 40px;
+}
+
+.priest-on-missions ul li{
+    list-style-type: disc !important;
+    font-weight: 800 !important;
+}
+.priest-on-missions ul li span{
+    font-weight: 800 !important;
+}
+
+.priest-on-mission ul{
+   
+    padding: 20px 0px 20px 20px;
+    padding-left: 40px;
+}
+
+.priest-on-mission ul li{
+    list-style-type: disc !important;
+}
+
+/* DEANARY STRUCTURE ######################################################333 */
+
+.deanary-structure ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+.deanary-structure ul li{
+    list-style-type: disc !important;
+}
+
+
+
+/* PARISHES PARISHES PARISHES PARISHES PARISHES PARISHES  */
+.our-parishes ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+.our-parishes ul li{
+    list-style-type: disc !important;
+}
+
+
+
+/* direct_directorate direct_directorate direct_directorate direct_directorate */
+.direct_directorate ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+.direct_directorate ul li{
+    list-style-type: disc !important;
+}
+
+
+/* CHAPLAINCY AND APOSTOLATES CHAPLAINCY AND APOSTOLATES  */
+.chaplaincy_apostolates ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 40px;
+}
+.chaplaincy_apostolates ul li{
+    list-style-type: disc !important;
+}
+
+
+/* COMMISSION COMMITTEES  COMMISSION COMMITTEES  COMMISSION COMMITTEES  COMMISSION COMMITTEES COMMISSION COMMITTEES COMMISSION COMMITTEES  */
+.commission_committees ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 40px;
+}
+
+.commission_committees ul li{
+    list-style-type: disc !important;
+}
+
+
+/* CONVENATS CONGRATERNITIES  CONVENATS CONGRATERNITIES  CONVENATS CONGRATERNITIES  CONVENATS CONGRATERNITIES */
+.convenants_confraternities ul{
+    padding-left: 20px;
+    padding: 20px 0px 20px 40px;
+}
+
+.convenants_confraternities ul li{
+    list-style-type: disc !important;
+}
+
+
+
+/* NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS  */
+.news-page .news-name{
+    font-size: 14px !important;
+    margin-top: 50px !important;
+    line-height: normal !important;
+}
+.news-page .sermon-thumb img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* FINANCE DEPARTMENT FINANCE DEPARTMENT FINANCE DEPARTMENT FINANCE DEPARTMENT  */
+.finance-section {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    column-gap: 20px;
+}
+
+@media only screen and (max-width: 767px){
+.finance-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
+
+
+
+ 
+
+
+
+/* DICESAN SECRETARIAT DICESAN SECRETARIAT DICESAN SECRETARIAT DICESAN SECRETARIAT DICESAN SECRETARIAT */
+.diocesan-secretariat ul{
+
+    padding-left: 20px;
+    padding: 20px 0px 20px 20px;
+}
+.diocesan-secretariat ul li{
+    list-style-type: disc !important;
+}
+
+
+
+
+@media only  screen and (min-width: 767px) and (max-width: 1024px){
+    .zmm-wrapper{
+        z-index: 999999999999999999999999999999999999999 !important;
+        background: #e21414 !important;
+    }
+
+    .feature-section{
+        z-index: 1;
+    }
+
+    .MVM .mv-h{
+        z-index: 1 !important;
+    }
+
+    .feature-icon{
+        z-index: 1 !important;
+    }
+
+    .about-wrap{
+        margin-top: 10px;
+    }
+
+    .about-wrap .about-img{
+        height: 550px;
+    }
+
+    .abt-write{
+        z-index: 999999999999;
+    }
+
+    .dots{
+        display: none;
+    }
+}
+
+@media only  screen and (max-width: 767px){
+    .zmm-wrapper{
+        z-index: 999999999999999999999999999999999999999 !important;
+        background: #d31212 !important;
+    }
+    .dots{
+        display: none;
+    }
+
+    .feature-section{
+        z-index: 1 !important;
+    }
+
+    .MVM .mv-h{
+        z-index: 1 !important;
+    }
+
+    .feature-icon{
+        z-index: 1 !important;
+    }
+}
+
+
+

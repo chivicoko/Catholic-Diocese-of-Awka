@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/favicon.png" rel="icon" />
+    <!--Title-->
+    <title>Catholic Diocese of Awka</title>
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="css/simple-line-icons.min.css" />
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="css/themify-icons.css" />
+    <!-- Owl Slider -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- Revolution Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
+    />
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="rs-plugin/css/main-slider/rs6.css"
+    />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/color-schemes/red.css" />
+    <link rel="stylesheet" href="css/style.css" class="main-style" />
+
+    <!-- Custom Style  -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Phosphoric Icon  -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+      #rev_slider_6_1_wrapper .tp-loader.spinner1 {
+        background-color: #ffffff !important;
+      }
+    </style>
+    <style>
+      .rs-layer.Concept-Content a,
+      .rs-layer.Concept-Content a:visited {
+        color: #fff !important;
+        border-bottom: 1px solid #fff !important;
+        font-weight: 700 !important;
+      }
+
+      .rs-layer.Concept-Content a:hover {
+        border-bottom: 1px solid transparent !important;
+      }
+
+      .rs-layer.Concept-Content-Dark a,
+      .rs-layer.Concept-Content-Dark a:visited {
+        color: #000 !important;
+        border-bottom: 1px solid #000 !important;
+        font-weight: 700 !important;
+      }
+
+      .rs-layer.Concept-Content-Dark a:hover {
+        border-bottom: 1px solid transparent !important;
+      }
+
+      @media only screen and (max-width: 575px) {
+        rs-layer.res-slide-btn {
+          padding: 7px 16px !important;
+          font-size: 13px !important;
+        }
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows {
+        cursor: pointer;
+        min-width: 60px;
+        min-height: 60px;
+        position: absolute;
+        display: block;
+        z-index: 1000;
+        border-radius: 50%;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.38);
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows:before {
+        font-family: "revicons";
+        font-size: 17px;
+        color: #ffffff;
+        display: block;
+        line-height: 60px;
+        text-align: center;
+        z-index: 2;
+        position: relative;
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows.tp-leftarrow:before {
+        content: "\e824";
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows.tp-rightarrow:before {
+        content: "\e825";
+      }
+
+      #rev_slider_1_1_wrapper .zeus .tp-title-wrap {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        border-radius: 50%;
+      }
+
+      #rev_slider_1_1_wrapper .zeus .tp-arr-imgholder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        transform: translatex(-100%);
+        -webkit-transform: translatex(-100%);
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder {
+        transform: translatex(100%);
+        -webkit-transform: translatex(100%);
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows.rs-touchhover .tp-arr-imgholder {
+        transform: translatex(0);
+        -webkit-transform: translatex(0);
+        opacity: 1;
+      }
+
+      #rev_slider_1_1_wrapper .zeus.tparrows.rs-touchhover .tp-title-wrap {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        opacity: 1;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-1"] .zeus.tparrows {
+        min-width: 60px !important;
+        min-height: 60px !important;
+        background: rgba(0, 0, 0, 0.38) !important;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-1"] .zeus.tparrows:before {
+        line-height: 60px !important;
+        font-size: 17px !important;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-2"] .zeus.tparrows {
+        min-width: 60px !important;
+        min-height: 60px !important;
+        background: rgba(0, 0, 0, 0.38) !important;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-2"] .zeus.tparrows:before {
+        line-height: 60px !important;
+        color: #ffffff !important;
+        font-size: 17px !important;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-3"] .zeus.tparrows {
+        min-width: 60px !important;
+        min-height: 60px !important;
+        background: rgba(0, 0, 0, 0.38) !important;
+      }
+
+      #rev_slider_1_1[data-slideactive="rs-3"] .zeus.tparrows:before {
+        line-height: 60px !important;
+        font-size: 17px !important;
+      }
+    </style>
+  </head>
+
+  <!--Body Start-->
+
+  <body data-res-from="1025">
+    <!--Page Loader-->
+    <!-- <div class="page-loader"></div> -->
+
+    <!--Zmm Wrapper-->
+    <div class="zmm-wrapper">
+      <a href="#" class="zmm-close close"></a>
+      <div class="zmm-inner bg-white typo-dark">
+        <div class="text-center mobile-logo-part margin-bottom-30">
+          <a href="index.html" class="img-before"
+            ><img
+              src="images/logo.png"
+              class="img-fluid"
+              width="250"
+              height="51"
+              alt="Logo"
+          /></a>
+        </div>
+        <div class="zmm-main-nav"></div>
+        <div class="search-form-wrapper margin-top-30">
+          <div class="togglebar-donate-btn" style="margin-left: -15px">
+            <a href="donate-now.html" class="donate-btn">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main wrapper-->
+    <div class="page-wrapper">
+      <div class="page-wrapper-inner">
+        <header>
+
+          <!--Mobile Header-->
+          <div class="mobile-header bg-white typo-dark">
+            <div class="mobile-header-inner">
+              <div class="sticky-outer">
+                <div class="sticky-head">
+                  <div class="basic-container clearfix">
+                    <ul class="nav mobile-header-items pull-left">
+                      <li class="nav-item">
+                        <a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a>
+                      </li>
+                    </ul>
+                    <ul class="nav mobile-header-items pull-center">
+                      <li>
+                        <a href="index.html" class="img-before"><img src="images/logo.png"
+                            class="img-fluid" width="250" height="45" alt="Logo" /></a>
+                      </li>
+                    </ul>
+                    <ul class="nav mobile-header-items pull-right mobile-donate-btn">
+                      <li class="nav-item">
+                        <a href="donate-now.html" class="donate-btn">Donate</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- .basic-container -->
+                </div>
+                <!-- .sticky-head -->
+              </div>
+              <!-- .sticky-outer -->
+            </div>
+            <!-- .mobile-header-inner -->
+          </div>
+          <!-- .mobile-header -->
+  
+          <!--Header-->
+          <div class="header-inner header-1 header-absolute">
+  
+            <!--Topbar-->
+            <div class="topbar relative" style="background: #192F59;">
+              <div class="basic-container clearfix">
+                <ul class="nav topbar-items pull-left">
+                  <li class="nav-item">
+                    <ul class="nav header-info">
+                      <li>
+                        <div class="header-address typo-white">
+                          <span class="ti-email"></span> support@catholicdioceseofawka.org
+                        </div>
+                      </li>
+                      <li>
+                        <div class="header-address typo-white">
+                          <span class="ti-headphone-alt"></span> +234(0)70-35888-917
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+  
+                <ul class="nav topbar-items pull-right">
+                  <li class="nav-item">
+                    <div class="topbar-right">
+                      <a href="portal.html" class> Portal </a>
+                      <a href="diocesan_calender.html" class> Diocesan Calender </a>
+                      <a href="#" class="donate-btn">Donate</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Topbar-->
+  
+            <!--Sticky part-->
+            <div class="sticky-outer" style="background-color: #fff; ">
+              <div class="sticky-head">
+                <!--Navbar-->
+                <nav class="navbar nav-shadow">
+                  <div class="basic-container clearfix">
+                    <div class="navbar-inner">
+                      <!--Overlay Menu Switch-->
+                      <ul class="nav navbar-items pull-left">
+                        <li class="list-item">
+                          <a href="index.html" class="logo-general"><img src="images/logo.png"
+                              class="img-fluid" width="300" height="50" alt="Logo" /></a>
+                          <a href="index.html" class="logo-sticky"><img src="images/logo.png"
+                              class="img-fluid" width="200" height="50" alt="Logo" /></a>
+                        </li>
+                      </ul>
+                      <!-- Menu -->
+                      <ul class="nav navbar-items pull-right">
+                        <!--List Item-->
+                        <li class="list-item">
+                          <ul class="nav navbar-main menu-white">
+                            <li class="active cus-img-menu">
+                              <a href="index.html"><i class="ti-home"
+                                  style="font-size: 17px;"></i></a>
+  
+                            </li>
+                            <li class="dropdown dropdown-sub">
+                              <a href="#">About Us</a>
+                              <ul class="dropdown-menu">
+                                <li><a href="history.html">Brief History</a></li>
+                              </ul>
+                            </li>
+  
+                            <li class="dropdown dropdown-sub">
+                              <a href="">Bishop</a>
+                              <ul class="dropdown-menu">
+  
+                                <li>
+                                  <a href="bishop.html">Bishop</a>
+                                </li>
+                                <li>
+                                  <a href="book_appointment.html">Book Appointment</a>
+                                </li>
+                                <li>
+                                  <a href="pastbishop.html">Past Bishops</a>
+                                </li>
+                                <li>
+                                  <a href="pastoral-letter.html">Pastoral Letters</a>
+                                </li>
+                              </ul>
+                            </li>
+  
+                            <li class="dropdown dropdown-sub">
+                              <a href="">DIOCESE</a>
+                              <ul class="dropdown-menu">
+  
+                                <li>
+                                  <a href="curia.html">Curia</a>
+                                </li>
+                                <li>
+                                  <a href="priest_on_mission.html">Priest on Mission</a>
+                                </li>
+                                <li>
+                                  <a href="deanary.html">Deanary Structure</a>
+                                </li>
+                                <li>
+                                  <a href="our_parishes.html">Parishes</a>
+                                </li>
+                                <li>
+                                  <a href="direct_directorate.html">Director/Directorate</a>
+                                </li>
+                                <li>
+                                  <a href="chaplaincy_apostolates.html">Chaplencies and Apostolate</a>
+                                </li>
+                                <li>
+                                  <a href="commissions_committees.html">Commission/Committees</a>
+                                </li>
+                                <li>
+                                  <a href="convenants_confraternities.html">Convents/Fraternities</a>
+                                </li>
+                              </ul>
+                            </li>
+  
+                            <li class="dropdown dropdown-sub">
+                              <a href="">Adminstration</a>
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a href="diocesan_secretariat.html">Diocesan Secretariat</a>
+                                </li>
+                                <li>
+                                  <a href="priest_placement.html">Priest Placement</a>
+                                </li>
+                                <li>
+                                  <a href="#">Apostolic Work</a>
+                                </li>
+                                <li>
+                                  <a href="#">Parish Catechist</a>
+                                </li>
+  
+                                <li class="dropdown">
+                                  <a href=""> Statutory Body</a>
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a href="#">CMO</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">CWO</a>
+                                    </li>
+  
+                                    <li>
+                                      <a href="#">CYON</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">MARY LEAGUE</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">CASAN</a>
+                                    </li>
+  
+                                    <li>
+                                      <a href="#">CHOIR</a>
+                                    </li>
+  
+                                    <li>
+                                      <a href="#">CCCM</a>
+                                    </li>
+                                    <li>
+                                      <a href="#">OTHERS</a>
+                                    </li>
+  
+                                  </ul>
+                                </li>
+  
+                                <li>
+                                  <a href="#">Teaching Apostolate</a>
+                                </li>
+                                <li>
+                                  <a href="priest_verification.html">Priest Verification</a>
+                                </li>
+                                <li>
+                                  <a href="priest_connet.html">Priest Connect</a>
+                                </li>
+                                <li>
+                                  <a href="parish_login.html">Parish Login</a>
+                                </li>
+                                <li>
+                                  <a href="oes_login.html">OES Login</a>
+                                </li>
+  
+                              </ul>
+                            </li>
+  
+                            <li class="dropdown dropdown-sub">
+                              <a href="">Department</a>
+                              <ul class="dropdown-menu">
+  
+                                <li>
+                                  <a href="https://awkacathedu.com/">Education</a>
+                                </li>
+                                <li>
+                                  <a href="health.html">Health</a>
+                                </li>
+                                <li>
+                                  <a href="#">JDPC</a>
+                                </li>
+                                <li>
+                                  <a href="finance-department.html">Finance Department</a>
+                                </li>
+  
+                                <li>
+                                  <a href="#">Family and Human Life</a>
+                                </li>
+                                <li>
+                                  <a href="https://fidesnigeria.org/">Fides Media</a>
+                                </li>
+  
+                                <li>
+                                  <a href="other_establishment.html">Other Establishment</a>
+                                </li>
+                              </ul>
+                            </li>
+  
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="project.html">Project</a></li>
+                          </ul>
+                        </li>
+                        <!--List Item End-->
+                      </ul>
+                      <!-- Menu -->
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <!--sticky-head-->
+            </div>
+            <!--sticky-outer-->
+  
+          </div>
+        </header>
+        <!-- header -->
+
+        <!-- page-banner -->
+        <div class="page-title-wrap typo-white page-banner">
+          <div
+            class="page-title-wrap-inner section-bg-img"
+            data-bg="images/bg/banner.jpeg"
+          >
+            <span class="theme-overlay"></span>
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <div class="page-title-inner">
+                    <div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                      <a href="index.html" class="theme-color">HOME</a>
+                      <span class="current">OUR BISHOP</span>
+                    </div>
+                    <h6></h6>
+                    <h1 class="page-title mb-0">Our Bishop</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page-banner -->
+
+        <!-- Page Content -->
+        <div class="content-wrapper pad-none">
+          <div class="content-inner">
+            <!-- About Section -->
+            <section id="section-about" class="section-about pad-bottom-none">
+              <div class="container history">
+
+                <div class="animate">
+                    <img src="images/goldenball.png" alt="" width="20">
+                </div>
+                
+                <!-- Row -->
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-title">
+                      <span class="sub-title theme-color text-uppercase"
+                        >Our Bishop</span
+                      >
+                      <h2 class="section-title margin-top-5">Biography</h2>
+                      <span class="border-bottom"></span>
+                    </div>
+                  </div>
+
+                  <!-- Col -->
+                  <div class="col-lg-12">
+                    <div class="about-bishop">
+                        <img
+                      src="images/about-us/Bishop-Ezeokafor.jpg"
+                      class=""
+                      alt=""
+                    />
+                    <!-- <div style="margin-top: 40px; margin-bottom: 30px;">
+                        <P>Most Rev. Paulinus Ezeokafor</P>
+                    </div> -->
+                    </div>
+                    
+
+                    <div class="title-wrap margin-bottom-50">
+                        <div class="section-title">
+                            
+                            <h2 class="section-title margin-top-5" style="text-align: center; font-size: 20px;">HIS LORDSHIP, MOST REV. PAULINUS EZEOKAFOR.
+                                Biography.</h2>
+                            <span class="border-bottom"></span>
+                        </div>
+                      <div class="">
+                        <p class="margin-bottom-20 text-justify">
+                            In a small village of Ifite-Nanka in Orumba North Local Government Area, Anambra State, a child was born to Late Mr. Raymond Enukebe and Mrs. Veronica Nwasinwa Ezeokafor on 13th  September,1952. This child was named ʻChukwuemekaʼ,which represents the words used by David in Psalm 107:1 to express gratitude to God for his goodness and mercy. At the heart of the name ‘Chukwuemeka’ is gratitude, which comes from Latin etymology ‘gratus’ (thankful). Italian word gratitudine still from the same root gratus, brings out the relationship between grace (grazie) and gratitude (gratitudine).  He who enjoys grace of God, must live a life of gratitude. So, for Late Mr.  and Mrs.  Raymond Ezeokafor, it was gratitude for the gift of a first son (diokpala). But for his Lordship, it is an attitude, a way of life. ‘The highest expression of gratitude does not lie in expression of mere words but in living a life of gratitude…’ (J. F. Kennedy).  So, the young Chukwuemeka became indeed a symbol of God’s blessing to his family and to all around him. It was with these sentiments of thanksgiving and gratitude, being animated by the apostolic zeal of St. Paulinus that prepared him for vocation to sacred priesthood. After his primary school at St Anthony’s Nanka and in 1959 he moved to All Hallows’ Seminary Onitsha. He distinguished himself in the seminary, such that his one-year apostolic work was spent at the Archdiocesan Secretariat Onitsha with the then Archbishop of Onitsha, His Eminence Francis Cardinal Arinze.
+                            The young Chukwuemeka studied philosophy at the then Bigard Memorial Seminary, philosophy Campus Ikot Ekpene now St Joseph’s Major Seminary Ikot Ekpene (1976-1979), where he obtained Bachelor’s degree in Philosophy from Pontifical Urban University Rome. After his theological formation, in Bigard Memorial Seminary Enugu from 1980-1983, he obtain Bachelor’s degree in theology from Pontifical University Rome.
+                        </p>
+                        <p class="text-justify">
+                            After his seminary formation, the young Chukwuemeka being moved with same faith of St Paulinus, was ordained a priest on 30th June 1983, by the pioneer bishop of Awka Most Rev. A.K Obiefuna. The same apostolic zeal which enabled St Paulinus, an Italian missionary priest, to convert North Umbria to Christianity, helped young Paulinus Chukwuemeka in his general disposition as a priest. After few years pastoral experience, he was sent to Rome to study moral theology at Pontifical University of Santa Croce, where he obtained licentiate and doctoral degree in Moral theology.
+                            Coming back to Nigeria he served as a Rector of St. Dominic Savior Seminary Akpu (1996-2006), then the Rector of St John Bosco Seminary Isuaniocha (2006-2007). On 20th January 2007, Pope Benedict XVI appointed him the auxiliary bishop of Awka. On 28th April 2007, in accordance with the norms of the Church, he was consecrated a bishop by Archbishop Renzo Fratini, the then Papal Nuncio to Nigeria. When the episcopal see of Awka became vacant, the light of can.416, the Holy Father appointed him the Apostolic Administrator of Awka diocese. On 8th July 2011, he became the substantive bishop of Awka diocese.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Col -->
+                </div>
+                
+                <!-- Row -->
+              </div>
+              <!-- Container -->
+            </section>
+            <!-- About Section End -->
+
+
+            <!-- Get a Quote Section -->
+            <section
+              id="get-quote-section"
+              class="get-quote-section pad-none history-abt"
+              style="margin-bottom: 30px;"
+            >
+              <div class="container">
+                <div
+                  class="div-bg-img b-radius-8 pad-top-50 pad-bottom-45"
+                  data-bg="images/bg/video-bg.jpg"
+                >
+                  <!-- Row -->
+                  <div class="row get-quote-2">
+                    <!-- Col -->
+                    <div class="col-md-3">
+                      <!-- video wrap -->
+                      <div class="video-wrap wrap-stretch relative">
+                        <!-- video details -->
+                        <div class="video-wrap-details">
+                          <!-- video button -->
+                          <div class="video-play-btn text-center">
+                            <div class="video-icon">
+                              <a
+                                class="popup-youtube box-shadow1"
+                                href="https://youtu.be/8q3vvIdPwWE"
+                              >
+                                <i
+                                  class="fa fa-youtube-play"
+                                  aria-hidden="true"
+                                ></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- video details End-->
+                      </div>
+                      <!-- video wrap end -->
+                    </div>
+                    <!-- Col -->
+                    <!-- Col -->
+                    <div class="col-md-9 pe-5">
+                      <div class="title-wrap mb-0">
+                        <div class="section-title typo-white mb-0">
+                          <h2 class="title mb-0">
+                            ST PATRICK'S CATHEDRAL AWKA
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Col -->
+                  </div>
+                  <!-- Row -->
+                </div>
+              </div>
+              <!-- Container -->
+            </section>
+            <!-- Get a Quote Section End -->
+
+
+            					<!-- Feature Section -->
+					<section id="feature-section" class="feature-section pad-top-50 index-1  relative"
+                    style="padding-bottom: 30px !important; background: #eee;" >
+                    <div class="container">
+                        <!-- Row -->
+                        <div class=" MVM">
+                            <!-- Col -->
+                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
+                                <div class>
+                                    <div class="feature-box-details">
+                                        <div class="feature-icon mb-3">
+                                            <span class="ti-heart theme-color b-radius-50"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <div class="feature-title text-center relative margin-bottom-10">
+                                                <h5>Our Mission</h4>
+                                            </div>
+                                            <p class="mb-0 text-center">Evangelize the people of God through
+                                                offering of Spiritual and material empowerment for
+                                                the glory of God and salvation of souls.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Col -->
+                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
+                                <div class>
+                                    <div class="feature-box-details">
+                                        <div class="feature-icon mb-3">
+                                            <span class="ti-book theme-color b-radius-50"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <div class="feature-title text-center relative margin-bottom-10">
+                                                <h5>Our Vision</h4>
+                                            </div>
+                                            <p class="mb-0 text-center">A diocese where people of God enjoy
+                                                fullness of life offfered by Jesus christ through
+                                                integral human development and spiritual empowerment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Col -->
+                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
+                                <div class>
+                                    <div class="feature-box-details">
+                                        <div class="feature-icon mb-3">
+                                            <span class="ti-heart theme-color b-radius-50"></span>
+                                        </div>
+                                        <div class="feature-content">
+                                            <div class="feature-title text-center relative margin-bottom-10">
+                                                <h5>Motto</h4>
+                                            </div>
+                                            <p class="mb-0 text-center">Caritas mea cum omnibus vobis in
+                                                Christo Jesu
+                                                - (My love is with you all in Christ Jesus).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row -->
+                    </div>
+                    <!-- Container -->
+                </section>
+                <!-- Feature Section End -->
+        
+          </div>
+        </div>
+      </div>
+      <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+	<!-- Footer -->
+	<footer id="footer" class="footer footer-1 footer-bg-img" data-bg="images/bg/video-bg.jpg">
+		<!--Footer Widgets Columns Posibilities 4-->
+		<div class="footer-widgets">
+			<div class="footer-middle-wrap footer-overlay-dark">
+				<div class="color-overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+								<!-- Title -->
+								<!-- <h3 class="title typo-white">About Zegen</h3> -->
+								<img src="images/logo.png" alt="">
+							</div>
+							<!-- Text -->
+							<div class="widget-text margin-bottom-30">
+								<p class="text-justify">
+									Get ready to discover more about the St. Patrick Cathedral. 
+									The Roman Catholic Diocese of Awka (Latin: Avkaënsis) is a diocese located in the city of Awka, Anambra State.
+								</p>
+							</div>
+							
+						</div>
+						<!-- Col -->
+						<div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+								<!-- Title -->
+								<h3 class="title typo-white">Quick Links</h3>
+							</div>
+							<!-- Text -->
+							<div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="diocesan_secretariat.html">Diocesan Secretariat</a></li>
+									<li class="menu-item"><a href="priest_placement.html">Priests' Placement</a></li>
+									<li class="menu-item"><a href="#">Parish Catechist</a></li>
+									<li class="menu-item"><a href="portal.html">Portal</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Col -->
+						<div class="col-lg-3 widget recent-posts">
+							<div class="widget-title">
+								<!-- Title -->
+								<h3 class="title typo-white">Universal</h3>
+							</div>
+
+							<div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="https://www.vatican.va/content/vatican/en.html" target="_blank">Vatican City</a></li>
+									<li class="menu-item"><a href="https://csnigeria.org/" target="_blank">Catholic Secretariat of Nigeria</a></li>
+									<li class="menu-item"><a href="http://clcn.com.ng/" target="_blank">Catholic Laity Council of Nigeria</a></li>
+									<li class="menu-item"><a href="http://www.gcatholic.org/dioceses/conference/076.htm" target="_blank">Catholic Bishops Conference of Nigeria</a></li>
+								</ul>
+							</div>
+							
+						</div>
+						<!-- Col -->
+						<div class="col-lg-3 widget contact-info-widget">
+							<div class="widget-title">
+								<!-- Title -->
+								<h3 class="title typo-white">Contact Us</h3>
+							</div>
+							<div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="#">Canvas</a></li>
+								</ul>
+							</div>
+							<p> <i class="ph ph-phone"></i> +234(0)70-35888-917</p>
+							<p> <i class="ph ph-map-pin"></i> St.Patrick's Cathedral Awka</p>
+							<li>Open Hours: 8:00 AM - 6:00 PM</li>
+							
+						</div>
+						<!-- Col -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer Copyright Columns Posibilities 4-->
+		<div class="footer-copyright">
+			<div class="footer-bottom-wrap pad-tb-20 typo-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="footer-bottom-items pull-left">
+								<li class="nav-item">
+									<div class="nav-item-inner">
+										Copyright All Right Reserved 2023 <a href="index.html">Catholic Diocese of Awka</a>
+									</div>
+								</li>
+							</ul>
+							<ul class="footer-bottom-items footer-menu pull-right">
+								<li class="nav-item">
+									<a href="#">Privacy</a>
+								</li>
+								<li class="nav-item">
+									<a href="#">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+
+    <!-- jQuery Lib -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Easing Js -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- Carousel Js Code -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Paroller Js -->
+    <script src="js/jquery.paroller.min.js"></script>
+    <!-- Isotope Js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Validator Js -->
+    <script src="js/validator.min.js"></script>
+    <!-- Smart Resize Js -->
+    <script src="js/smartresize.min.js"></script>
+    <!-- Appear Js -->
+    <script src="js/jquery.appear.min.js"></script>
+    <!-- Theme Custom Js -->
+    <script src="js/custom.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="rs-plugin/js/main-slider/rbtools.min.js"></script>
+    <script src="rs-plugin/js/main-slider/rs6.min.js"></script>
+    <script src="rs-plugin/js/main-slider/home-1.js"></script>
+  </body>
+  <!-- Body End -->
+</html>
