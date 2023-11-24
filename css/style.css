@@ -4546,6 +4546,34 @@ span.feature-count {
     color: #fff;
 }
 /*Feature Box 4*/
+
+
+.feature-box-wrap.f-box-style-4.one .feature-box-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box-wrap.f-box-style-4.one {
+    width: 50vw;
+    padding: 30px 30px 50px 30px;
+    /* padding-inline: 70px; */
+}
+.feature-box-wrap.f-box-style-4.one p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.feature-box-wrap.f-box-style-4.two {
+    padding: 30px 30px 50px 30px;
+}
+.feature-box-wrap.f-box-style-4.two .feature-content {
+    width: 30vw;
+    padding-top: 75px;
+}
+
 .feature-box-wrap.f-box-style-4 {
     padding: 30px 30px 33px 30px;
     background-color: #FFFFFF;

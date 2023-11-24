@@ -43,6 +43,7 @@
 
     <!-- Phosphoric Icon  -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <style>
       #rev_slider_6_1_wrapper .tp-loader.spinner1 {
         background-color: #ffffff !important;
@@ -70,7 +71,69 @@
           width: 100%;
       }
 
+      
+      .feature-box-wrap.f-box-style-4.one .feature-box-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .feature-box-wrap.f-box-style-4.one {
+          width: 50vw;
+          padding: 30px 30px 50px 30px;
+          /* padding-inline: 70px; */
+      }
+      .feature-box-wrap.f-box-style-4.one p {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 30px;
+      }
+      .feature-box-wrap.f-box-style-4.two {
+          padding: 30px 30px 50px 30px;
+      }
+      .feature-box-wrap.f-box-style-4.two .feature-content {
+          width: 30vw;
+          padding-top: 75px;
+      }
+
+      @media only  screen and (max-width: 767px){
+     
+      .feature-box-wrap.f-box-style-4.one .feature-box-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .feature-box-wrap.f-box-style-4.one {
+          width: 100%;
+          padding: 30px 30px 50px 30px;
+          /* padding-inline: 70px; */
+      }
+      .feature-box-wrap.f-box-style-4.one p {
+          width: 100%;
+          display: block;
+          text-align: center;
+      }
+      .feature-box-wrap.f-box-style-4.one p span {
+          width: 100%;
+          display: block;
+      }
+      .feature-box-wrap.f-box-style-4.two {
+          padding: 30px 30px 50px 30px;
+          margin-top: 25px;
+      }
+      .feature-box-wrap.f-box-style-4.two .feature-content {
+          width: 100%;
+          padding-top: 10px;
+          padding-inline: 10px;
+      }
+  }
+
     </style>
+
     <style>
       .rs-layer.Concept-Content a,
       .rs-layer.Concept-Content a:visited {
@@ -558,41 +621,57 @@
                       <h2 class="mb-5">Get in touch</h2>
                         <!-- Row -->
                         <div class="pt-5 MVM">
+                          
                             <!-- Col -->
-                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
+                            <div class="mv-h feature-box-wrap f-box-style-4 one relative">
                                 <div class>
                                     <div class="feature-box-details">
                                         <div class="feature-icon mb-3">
-                                            <span class="ti-heart theme-color b-radius-50"></span>
+                                            <span class="ti-email theme-color b-radius-50"></span>
                                         </div>
+                                        
                                         <div class="feature-content">
-                                            <div class="feature-title text-center relative margin-bottom-10">
-                                                <h5>Phone Number</h4>
-                                            </div>
-                                            <p class="mb-0 text-center">
-                                              08024678974 <br> 
-                                              07034474694 <br> 
-                                              09034786456
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Col -->
-                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
-                                <div class>
-                                    <div class="feature-box-details">
-                                        <div class="feature-icon mb-3">
-                                            <span class="ti-book theme-color b-radius-50"></span>
-                                        </div>
-                                        <div class="feature-content">
-                                            <div class="feature-title text-center relative margin-bottom-10">
+                                          <div class="feature-title text-center relative margin-bottom-20">
+                                              <h5>Phone Number</h4>
+                                          </div>
+                                          <p style="line-height: 20px;" class="mb-3">
+                                            <span>
+                                              <strong class="text-dark">Office of the Bishop:</strong>
+                                            </span>
+                                            <span>
+                                              08034675348
+                                            </span>
+                                          </p>
+                                          <p style="line-height: 20px;" class="mb-0">
+                                            <span>
+                                              <strong class="text-dark">Office of the Chancellor:</strong>
+                                            </span>
+                                            <span>
+                                              09074658376
+                                            </span>
+                                          </p>
+                                      </div>
+
+                                        <div class="feature-content mt-5">
+                                            <div class="feature-title text-center relative margin-bottom-20">
                                                 <h5>Email Address</h4>
                                             </div>
-                                            <p class="mb-0 text-center">
-                                              chancellor@catholicdioceseofawka.org <br>
-                                              bishop@catholicdioceseofawka.org <br>
-                                              support@catholicdioceseofawka.org
+                                            
+                                            <p style="line-height: 20px;" class="mb-3">
+                                              <span>
+                                                <strong class="text-dark">Office of the Bishop:</strong>
+                                              </span>
+                                              <span>
+                                                bishop@catholicdioceseofawka.org 
+                                              </span>
+                                            </p>
+                                            <p style="line-height: 20px;" class="mb-0">
+                                              <span>
+                                                <strong class="text-dark">Office of the Chancellor:</strong>
+                                              </span>
+                                              <span>
+                                                chancellor@catholicdioceseofawka.org 
+                                              </span>
                                             </p>
                                         </div>
                                     </div>
@@ -600,15 +679,15 @@
                             </div>
 
                             <!-- Col -->
-                            <div class="mv-h feature-box-wrap f-box-style-4 relative">
+                            <div class="mv-h feature-box-wrap f-box-style-4 two relative">
                                 <div class>
                                     <div class="feature-box-details">
                                         <div class="feature-icon mb-3">
-                                            <span class="ti-heart theme-color b-radius-50"></span>
+                                            <span class="ti-location-pin theme-color b-radius-50"></span>
                                         </div>
                                         <div class="feature-content">
                                             <div class="feature-title text-center relative margin-bottom-10">
-                                                <h5>Motto</h4>
+                                                <h5>Location</h4>
                                             </div>
                                             <p class="mb-0 text-center">
                                               St.Patrick's Cathedral, 420110, Awka, Anambra, Nigeria
