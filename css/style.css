@@ -7129,9 +7129,10 @@ footer a, footer.bg-dark a, footer.bg-overlay-dark a {
     left: 0;
     right: 0;
 }
-.footer-overlay-dark .container {
+.footer-overlay-dark .container-fluid {
     z-index: 1;
     position: relative;
+    width: 92vw;
 }
 .footer-1 .b-top {
     border-top: solid 1px #222222;
